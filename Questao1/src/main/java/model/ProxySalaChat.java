@@ -14,6 +14,7 @@ public class ProxySalaChat implements MediatorChat{
     public IProcessadoraRemocao processadora;
     
     public ProxySalaChat() {
+        this.salaChat = new SalaChat();
     }
 
     @Override
