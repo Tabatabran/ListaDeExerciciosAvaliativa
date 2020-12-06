@@ -12,7 +12,7 @@ package model;
 public class DecoratorConcreto extends DecoratorSanduiche{
     
     public DecoratorConcreto(ISanduiche sanduiche) {
-        super.setSanduiche(sanduiche);
+        super(sanduiche);
     }
     
     @Override
