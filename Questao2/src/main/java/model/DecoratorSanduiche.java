@@ -9,7 +9,7 @@ package model;
  *
  * @author tabat
  */
-public abstract class DecoratorSanduiche implements ISanduiche{
+public abstract class DecoratorSanduiche extends ISanduiche{
     ISanduiche sanduiche;
 
     public DecoratorSanduiche(ISanduiche sanduiche) {

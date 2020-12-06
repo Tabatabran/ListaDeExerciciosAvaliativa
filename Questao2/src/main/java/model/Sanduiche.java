@@ -11,7 +11,7 @@ import java.util.ArrayList;
  *
  * @author tabat
  */
-public class Sanduiche implements ISanduiche{
+public class Sanduiche extends ISanduiche{
     ArrayList<Ingrediente> ingredientes;
 
     public Sanduiche() {
@@ -26,5 +26,18 @@ public class Sanduiche implements ISanduiche{
     public void addIngrediente(Ingrediente ingrediente){
         ingredientes.add(ingrediente);
     }
+
+    @Override
+    public String toString() {
+        String descricaoSanduiche = "Ingredientes: \n";
+        
+        for(Ingrediente ingrediente: ingredientes){
+            descricaoSanduiche += ingrediente.getNome() + " quantidade: " + ingrediente.getQuantidade() + "\n";
+        }
+        
+        return descricaoSanduiche;
+    }
+    
+    
     
 }

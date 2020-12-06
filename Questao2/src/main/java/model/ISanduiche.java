@@ -9,6 +9,6 @@ package model;
  *
  * @author tabat
  */
-public interface ISanduiche {
-    public void addIngrediente(Ingrediente ingrediente);
+public abstract class ISanduiche {
+    public void addIngrediente(Ingrediente ingrediente){}
 }
